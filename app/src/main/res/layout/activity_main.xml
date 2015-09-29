@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffdfeaf1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/my_title"
+        android:id="@+id/txtMytitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/media_streamer"
+        android:id="@+id/btnSpotifyStreamer"
+        android:background="@color/darkorange"
+        android:layout_below="@+id/txtMytitle"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_alignStart="@+id/txtMytitle"
+        android:layout_alignRight="@+id/txtMytitle"
+        android:layout_alignLeft="@+id/txtMytitle"
+        android:layout_alignEnd="@+id/txtMytitle"
+        android:onClick="displayToast" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/super_duo1"
+        android:id="@+id/btnSuperDuo1"
+        android:background="@color/darkorange"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/btnSpotifyStreamer"
+        android:layout_alignStart="@+id/txtMytitle"
+        android:layout_alignRight="@+id/txtMytitle"
+        android:layout_alignLeft="@+id/txtMytitle"
+        android:layout_alignEnd="@+id/btnSpotifyStreamer"
+        android:onClick="displayToast"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/super_duo2"
+        android:id="@+id/btnSuperDuo2"
+        android:background="@color/darkorange"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/btnSuperDuo1"
+        android:layout_alignStart="@+id/txtMytitle"
+        android:layout_alignRight="@+id/txtMytitle"
+        android:layout_alignLeft="@+id/txtMytitle"
+        android:layout_alignEnd="@+id/btnSuperDuo1"
+        android:onClick="displayToast"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ant_terminator"
+        android:id="@+id/btnAntTerminator"
+        android:background="@color/darkorange"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/btnSuperDuo2"
+        android:layout_alignStart="@+id/txtMytitle"
+        android:layout_alignRight="@+id/txtMytitle"
+        android:layout_alignLeft="@+id/txtMytitle"
+        android:layout_alignEnd="@+id/btnSuperDuo2"
+        android:onClick="displayToast"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/materialize"
+        android:id="@+id/btnBaconReader"
+        android:background="@color/darkorange"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/btnAntTerminator"
+        android:layout_alignStart="@+id/txtMytitle"
+        android:layout_alignRight="@+id/txtMytitle"
+        android:layout_alignLeft="@+id/txtMytitle"
+        android:layout_alignEnd="@+id/btnAntTerminator"
+        android:onClick="displayToast"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capstone"
+        android:id="@+id/btnCapstone"
+        android:background="@color/darkred"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/btnBaconReader"
+        android:layout_alignStart="@+id/txtMytitle"
+        android:layout_alignRight="@+id/txtMytitle"
+        android:layout_alignLeft="@+id/txtMytitle"
+        android:layout_alignEnd="@+id/btnBaconReader"
+        android:onClick="displayToast"/>
+
+
+
+</RelativeLayout>
